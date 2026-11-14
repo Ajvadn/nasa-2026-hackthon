@@ -41,6 +41,8 @@ ORBITAL can be played solo or shared by a crew of up to four. Crews can assign f
 
 The public six-slide project demonstration, including screenshots of the mission planner, spacecraft builder, live flight, and flight result, is available here: [ORBITAL project demo](demo/ORBITAL-Project-Demo.pptx).
 
+For a longer gameplay walkthrough, watch the [ORBITAL demo video](demo/ORBITAL-Demo.mp4) (1:14).
+
 1. Select Europa and show the NASA REASON science connection.
 2. Equip the recommended science package, then change one component and point out how the live resource margins respond.
 3. Start the flight, collect a target, and pilot back to the relay.
