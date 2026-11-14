@@ -1,47 +1,60 @@
-# ORBITAL — Design it. Fly it. Learn it.
+# ORBITAL — Space Mission Design Game
 
-ORBITAL turns space mission design into a cooperative, playable learning game. A crew picks a science question, builds a spacecraft under competing limits, pilots it through a target-specific route, and sees exactly how the design and flight affected the science return.
+**Design it. Fly it. Learn it.**
 
-## Play the demo
+ORBITAL is a playable spacecraft-design game made for the 2026 NASA Space Apps Challenge, **Space Mission Design Game**. Choose a science objective, build a spacecraft within its limits, pilot the mission, and see how your design shaped the science you brought home.
 
-Open `index.html` in a current browser. Choose Europa, Earth, or Asteroid Scout. Select solo or a crew of up to four, then choose Cadet, Mission, or Flight Test mode. Configure instruments, spacecraft bus, launch vehicle, and orbit; telemetry updates as the design changes. Click **Begin mission**. Steer with **WASD** or arrow keys and hold **Space** to boost. Mobile players can use the on-screen controls.
+## Start playing
 
-Collect the route’s required science targets, avoid hazards, use fuel and repair pickups, and reach the relay before time expires. The crew takes turns at sample checkpoints. The debrief scores the engineering design and flight, explains the science trade-offs, and saves the run to the local mission log. Export a flight record as JSON for a presentation or follow-up analysis.
+Open `index.html` in a current browser. There is no install or build step.
 
-Save up to three spacecraft configurations in the design notebook. Select two or three to compare mission readiness, payload mass, power margin, budget, data volume, and communications capacity. Reload any saved build or export it as JSON.
+- Choose **Europa Ice Survey**, **Earth in Focus**, or **Asteroid Scout**.
+- Select science instruments, spacecraft bus, launcher, and orbit. Live telemetry shows mass, power, budget, data-return capacity, and mission fit.
+- Choose **Cadet**, **Mission**, or **Flight Test** mode, then launch.
+- Pilot with **WASD** or the **arrow keys**. Hold **Space** to boost. On touch screens, use the on-screen controls.
+- Collect science targets, avoid hazards, manage fuel and hull integrity, and reach the communications relay.
+- Review the debrief, revise the design, and fly again.
 
-## What makes the project a strong challenge response
+## The mission loop
 
-- **Complete mission loop:** objective → crew and difficulty → spacecraft design → hands-on flight → explanatory debrief.
-- **Integrated trade-offs:** mass, power, budget, data volume, communications, launch capacity, and orbit affect readiness; instruments and spacecraft bus also change flight handling and rewards.
-- **Cooperative play:** shared-console roles let up to four people divide mission planning and rotate pilot shifts.
-- **Science grounding:** each route explains a real mission or instrument connection and links directly to NASA source material.
-- **Accessible replay:** keyboard and touch controls, three difficulty levels, multiple routes, resource pickups, and a persistent local flight log.
-- **Interactive design desk:** a spacecraft schematic, power/mass readouts, and inspectable instrument and bus cards update as the design changes. Save, compare, reload, and export alternative blueprints.
-- **Clear presentation:** each run produces a score, mission outcome, science lesson, crew record, and exportable JSON artifact.
+1. **Pick a question.** Each scenario introduces a real space-science context.
+2. **Design the spacecraft.** Instrument choices trade science value against mass, power, data, communications, and cost. Bus, launcher, and orbit choices change the available margins.
+3. **Fly the mission.** Your payload and spacecraft bus affect science collection and handling during the interactive flight.
+4. **Learn from the outcome.** The debrief connects design constraints and piloting decisions to mission results.
+5. **Compare alternatives.** Save up to three builds in the local design notebook, compare their trade-offs, reload them, or export them as JSON.
 
-## Short demo script
+## Science scenarios
 
-1. Select **Europa Ice Survey** and point out the NASA REASON instrument reference.
-2. Switch to a four-person crew and assign the commander, engineer, science lead, and communications lead.
-3. Show how changing the bus or instruments moves mass, power, budget, and data telemetry.
-4. Begin the flight, collect targets, take damage or recover a pickup, and pilot to the relay.
-5. Read the debrief’s explanation, then export the flight record.
+| Mission | Science focus | NASA reference |
+| --- | --- | --- |
+| Europa Ice Survey | Explore how radar can investigate Europa’s icy shell. | [Europa Clipper — REASON radar](https://europa.nasa.gov/spacecraft/instruments/reason/) |
+| Earth in Focus | Compare surface imaging with thermal observations of Earth. | [Landsat — spectral bands and applications](https://science.nasa.gov/mission/landsat/spectral-bands-and-applications/) |
+| Asteroid Scout | Map an asteroid and characterize its surface before sampling. | [OSIRIS-REx — mission and instruments](https://science.nasa.gov/mission/osiris-rex/in-depth/) |
+
+These links ground the scenarios in NASA missions. In-game costs, component values, resource limits, and scoring are simplified teaching estimates; the game does not use a validated flight-design model.
+
+## Crew and replay
+
+ORBITAL can be played solo or shared by a crew of up to four. Crews can assign flight roles and take turns at science checkpoints. Three difficulty modes adjust the time, target, and impact challenge. Flight records and saved blueprints stay in the current browser; they are not uploaded. Players can export records and designs as JSON.
+
+## Suggested judge demo
+
+1. Select Europa and show the NASA REASON science connection.
+2. Equip the recommended science package, then change one component and point out how the live resource margins respond.
+3. Start the flight, collect a target, and pilot back to the relay.
+4. Use the debrief to explain what the design and flight taught; then adjust the spacecraft and replay.
+
+## Model limits
+
+The simulation is designed to teach trade-offs, not to produce real mission specifications. Mass, power, budget, data, communications, orbital capacity, route hazards, and readiness scoring are simplified game values. The **Model Notes** panel explains how the game uses them. NASA references provide scientific context; they are not inputs to a validated spacecraft analysis. Test the game as an educational prototype and consult mission requirements and engineering analyses for real design work.
+
+## Technology
+
+Built with plain HTML, CSS, and JavaScript. The flight game uses the browser Canvas API. No package installation or build tools are required. Google Fonts are used when an internet connection is available; system fonts provide the fallback.
 
 ## Project files
 
-- `index.html` — game interface, crew setup, mission source cards, and report.
-- `styles.css` — responsive visual system and touch layout.
-- `app.js` — mission models, resource scoring, Canvas flight game, crew turns, and local flight archive.
-
-The resource values, costs, orbital capacities, route geometry, and outcomes are simplified teaching estimates created for this game; they are not NASA flight-planning data. NASA pages are linked as science context, not as inputs to a validated engineering model. Flight records are stored only in the current browser and are not uploaded.
-
-## Science references
-
-- [NASA Europa Clipper — REASON ice-penetrating radar](https://europa.nasa.gov/spacecraft/instruments/reason/)
-- [NASA Science — Landsat spectral bands and applications](https://science.nasa.gov/mission/landsat/spectral-bands-and-applications/)
-- [NASA Science — OSIRIS-REx mission and instrument suite](https://science.nasa.gov/mission/osiris-rex/in-depth/)
-
-## Judging fit
-
-The 2026 local event overview lists Impact, Creativity, Validity, Relevance, and Presentation. ORBITAL is designed to make its STEM impact visible in a live demo, offer a distinctive build-and-fly loop, ground science explanations in NASA sources, address the full mission-design challenge, and give judges a short debrief plus a downloadable record. See the [2026 NASA Space Apps page](https://www.spaceappschallenge.org/2026/) and [2026 judging overview](https://www.spaceappschallenge.org/2026/local-events/ajmer/).
+- `index.html` — interface, mission scenarios, and dialogs.
+- `styles.css` — responsive layout and visual styles.
+- `app.js` — mission model, spacecraft builder, flight simulation, debrief, and browser-local saves.
+- `README.md` — setup, gameplay, science references, and model limits.
