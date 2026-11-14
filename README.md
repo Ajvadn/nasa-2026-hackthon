@@ -45,11 +45,3 @@ The resource values, costs, orbital capacities, route geometry, and outcomes are
 ## Judging fit
 
 The 2026 local event overview lists Impact, Creativity, Validity, Relevance, and Presentation. ORBITAL is designed to make its STEM impact visible in a live demo, offer a distinctive build-and-fly loop, ground science explanations in NASA sources, address the full mission-design challenge, and give judges a short debrief plus a downloadable record. See the [2026 NASA Space Apps page](https://www.spaceappschallenge.org/2026/) and [2026 judging overview](https://www.spaceappschallenge.org/2026/local-events/ajmer/).
-
-## What 2025 global winners suggest
-
-The official [2025 winner list](https://www.nasa.gov/learning-resources/stem-engagement-at-nasa/nasa-announces-2025-international-space-apps-challenge-global-winners/) shows a recurring strength: the project makes a specific scientific or practical task usable. PureFlow lets people model a habitat and test it against space-weather threats; SpaceGenes+ makes research results easier to explore; HerCode Space turns heliophysics into a classroom story; Zumorroda-X uses short games to make Earth-science decisions tangible. These are useful examples of interactive work tied to a concrete outcome, not a formula for winning.
-
-ORBITAL applies that lesson through a mission loop: state a science question, choose a payload, see resource consequences, fly the mission, and review the result. The Earth-observation package now pairs imaging with thermal mapping to match its Landsat explanation. A player-facing model card explains each resource calculation, score penalties, and the limits of the simplified estimates. The NASA source links stay attached to the relevant science.
-
-The main remaining opportunity is to expand evidence and validation: run short play sessions with students, record whether they can explain the trade-offs afterward, and use published mission facts or open datasets to strengthen the educational scenarios without presenting game estimates as flight specifications.
